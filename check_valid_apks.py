@@ -38,3 +38,6 @@ if __name__ == "__main__":
 
     bad_apks = scan_apk_directory(args.apk_directory)
     save_invalid_apks(bad_apks, args.output)
+
+# python3 check_valid_apks.py /home/your_user/pad4amd/datasets/drebin/benign_samples --output broken_apks.txt
+# cat broken_apks.txt | xargs rm -f 손상된 파일 자동삭제
